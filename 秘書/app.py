@@ -27,7 +27,7 @@ if "messages" not in st.session_state:
 @st.cache_resource
 def get_llm():
     return ChatGoogleGenerativeAI(
-        model="gemini-1.5-pro", # 処理速度重視なら gemini-1.5-flash に変更可能
+        model="gemini-2.0-flash", # 処理速度重視なら gemini-1.5-flash に変更可能
         temperature=0.7,
         google_api_key=api_key
     )
